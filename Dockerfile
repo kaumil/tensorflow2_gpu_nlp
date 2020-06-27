@@ -8,7 +8,7 @@ RUN pip3 install ptvsd
 RUN pip3 install SciPy pandas sklearn
 RUN python -m pip install bokeh
 RUN pip3 install nltk textblob stanford-corenlp
-RUN pip3 install gensim spacy[cuda101] polyglot
+RUN pip3 install gensim spacy polyglot
 
 
 RUN apt-get update
