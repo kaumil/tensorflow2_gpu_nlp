@@ -7,6 +7,7 @@ RUN pip3 install xeus-python==0.7.1
 RUN pip3 install ptvsd
 RUN pip3 install SciPy pandas sklearn
 RUN python -m pip install bokeh
+RUN pip3 install chartify
 RUN pip3 install nltk textblob stanford-corenlp
 RUN pip3 install gensim spacy[cuda101] polyglot
 
