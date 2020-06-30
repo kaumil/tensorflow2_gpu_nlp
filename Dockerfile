@@ -15,4 +15,8 @@ RUN pip3 install gensim spacy[cuda101] polyglot
 RUN apt-get update
 RUN apt-get install -y libsm6 libxext6 libxrender-dev
 
+EXPOSE 6006
+RUN pip3 install jupyter-tensorboard
+
+
 CMD ["bash", "-c", "source /etc/bash.bashrc && jupyter lab --notebook-dir=/tf --ip 0.0.0.0 --no-browser --allow-root"]
