@@ -20,3 +20,7 @@ Libraries include:
 
 ### Command to run:
 `docker container run -it --gpus all -v /path/to/directory:/tf/notebooks/ --rm -p 8888:8888 -p 6006:6006 tensorflow2_gpu_nlp`
+
+### Commands to start Tensorboard:
+`%load_ext tensorboard`
+`%tensorboard --logdir /path/to/logs/ --host 0.0.0.0`
